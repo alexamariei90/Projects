@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Types</title>
+    <link rel="stylesheet" type="text/css" href="resources/CSS/styles.css"/>
+</head>
+<body>
+<header>
+    <h1> Input Types Reference</h1>
+</header>
+<nav id="top">
+    <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#types">Types</a></li>
+        <li><a href="#atr">Attributes</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <!-- Intro Section -->
+        <article id="intro">
+            <h2>Intro</h2>
+            <p>To add fields for users to input information we use the <code>&lt;input&gt;</code> element and set the <code>type</code> attribute to a field of our choosing.</p>
+            <p>The <code>&lt;input&gt;</code> element ,depending on the type attribute, can be displayed in several ways and if no type is specified it's default value is <q>text</q>.</p>  
+            <p>The <code>&lt;input&gt;</code> element is the most important form element and is most of the times a child of the  <code>&lt;form&gt;</code> element.</p>
+            <p>The <code>&lt;input&gt;</code> tag specifies an input field where the user can enter data.</p>  
+        </article>
+        <hr/>
+        <!-- Table with the types of input -->
+        <article id="types" class="table">
+            <h2>Types of input</h2>
+            <table id="tbl1">
+                <caption>Considering the general syntax: <pre id="syntax"><code>&lt;input = type="value"&gt;</code></pre></caption>
+                <tbody>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>button</td> 
+                        <td>Defines a clickable button (mostly used with a JavaScript to activate a script)</td>
+                    </tr>
+                    <tr>
+                        <td>checkbox</td> 
+                        <td>Defines a checkbox</td>
+                    </tr>
+                    <tr>
+                        <td>color</td> 
+                        <td>Defines a color picker</td>
+                    </tr>
+                    <tr>
+                        <td>date</td> 
+                        <td>Defines a date control (year, month, day (no time))</td>
+                    </tr>
+                    <tr>
+                        <td>datetime-local</td> 
+                        <td>Defines a date and time control (year, month, day, time (no timezone)</td>
+                    </tr>
+                    <tr>
+                        <td>email</td> 
+                        <td>Defines a field for an e-mail address</td>
+                    </tr>
+                    <tr>
+                        <td>file</td> 
+                        <td>Defines a file-select field and a "Browse" button (for file uploads)</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td> 
+                        <td>Defines a hidden input field</td>
+                    </tr>
+                    <tr>
+                        <td>image</td> 
+                        <td>Defines an image as the submit button</td>
+                    </tr>
+                    <tr>
+                        <td>month</td> 
+                        <td>Defines a month and year control (no timezone)</td>
+                    </tr>
+                    <tr>
+                        <td>number</td> 
+                        <td>Defines a field for entering a number</td>
+                    </tr>
+                    <tr>
+                        <td>password</td> 
+                        <td>Defines a password field</td>
+                    </tr>
+                    <tr>
+                        <td>radio</td> 
+                        <td>Defines a radio button</td>
+                    </tr>
+                    <tr>
+                        <td>range</td> 
+                        <td>Defines a range control (like a slider control)</td>
+                    </tr>
+                    <tr>
+                        <td>reset</td> 
+                        <td>Defines a reset button</td>
+                    </tr>
+                    <tr>
+                        <td>search</td> 
+                        <td>Defines a text field for entering a search string</td>
+                    </tr>
+                    <tr>
+                        <td>submit</td> 
+                        <td>Defines a submit button</td>
+                    </tr>
+                    <tr>
+                        <td>tel</td> 
+                        <td>Defines a field for entering a telephone number</td>
+                    </tr>
+                    <tr>
+                        <td>text</td> 
+                        <td>Default. Defines a single-line text field</td>
+                    </tr>
+                    <tr>
+                        <td>time</td> 
+                        <td>Defines a control for entering a time (no timezone)</td>
+                    </tr>
+                    <tr>
+                        <td>url</td> 
+                        <td>Defines a field for entering a URL</td>
+                    </tr>
+                    <tr>
+                        <td>week</td> 
+                        <td>Defines a week and year control (no timezone)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="pcenter">For examples of each input type look <a href="https://www.w3schools.com/tags/att_input_type.asp">here!</a></p>
+        </article>
+        <hr/>
+        <!-- Table with the attributes on the input element -->
+        <article id="atr" class="table">
+            <h2>Attributes</h2>
+            <table id="tbl2">
+                <caption>The attributes of the <code>&lt;input&gt;</code> element:</caption>
+                <tbody>
+                    <tr>
+                        <th>
+                            Attribute
+                        </th>
+                        <th>
+                            Value
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                    </tr>
+                    <tr rowspan="5">
+                        <td>
+                            accept
+                        </td>
+                        <td>
+                            <i>file_extension</i>
+                            <pre>audio/*</pre>
+                            <pre>video/*</pre>
+                            <pre>image/*</pre>
+                            <i>media_type</i>
+                        </td>
+                        <td>
+                            Specifies a filter for what file types the user can pick from the file input dialog box (only for type="file")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            alt
+                        </td>
+                        <td>
+                            text
+                        </td>
+                        <td>
+                            Specifies an alternate text for images (only for type="image")
+                        </td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>
+                            autocomplete
+                        </td>
+                        <td>
+                            on
+                            off
+                        </td>
+                        <td>
+                            Specifies whether an <code>&lt;input&gt;</code> element should have autocomplete enabled
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            autofocus
+                        </td>
+                        <td>
+                            autofocus
+                        </td>
+                        <td>
+                            Specifies that an <code>&lt;input&gt;</code> element should automatically get focus when the page loads
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            checked
+                        </td>
+                        <td>
+                            checked
+                        </td>
+                        <td>
+                            Specifies that an <code>&lt;input&gt;</code> element should be pre-selected when the page loads (for type="checkbox" or type="radio")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            dirname
+                        </td>
+                        <td>
+                            inputname.dir
+                        </td>
+                        <td>
+                            Specifies that the text direction will be submitted
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            disabled
+                        </td>
+                        <td>
+                            disabled
+                        </td>
+                        <td>
+                            Specifies that an <code>&lt;input&gt;</code> element should be disabled
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            form
+                        </td>
+                        <td>
+                            form_id
+                        </td>
+                        <td>
+                            Specifies the form the <code>&lt;input&gt;</code> element belongs to
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            formaction
+                        </td>
+                        <td>
+                            URL
+                        </td>
+                        <td>
+                            Specifies the URL of the file that will process the input control when the form is submitted (for type="submit" and type="image")
+                        </td>
+                    </tr>
+                    <tr rowspan="3">
+                        <td>
+                            formenctype
+                        </td>
+                        <td>
+                            application/x-www-form-urlencoded
+                            multipart/form-data
+                            text/plain
+                        </td>
+                        <td>
+                            Specifies how the form-data should be encoded when submitting it to the server (for type="submit" and type="image")
+                        </td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>
+                            formmethod
+                        </td>
+                        <td>
+                            GET
+                            POST
+                        </td>
+                        <td>
+                            Defines the HTTP method for sending data to the action URL (for type="submit" and type="image")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            formnovalidate
+                        </td>
+                        <td>
+                            formnovalidate
+                        </td>
+                        <td>
+                            Defines that form elements should not be validated when submitted
+                        </td>
+                    </tr>
+                    <tr rowspan="5">
+                        <td>
+                            formtarget
+                        </td>
+                        <td>
+                            _blank
+                            _self
+                            _parent
+                            _top
+                            <i>framename</i>
+                        </td>
+                        <td>
+                            Specifies where to display the response that is received after submitting the form (for type="submit" and type="image")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            height
+                        </td>
+                        <td>
+                            pixels
+                        </td>
+                        <td>
+                            Specifies the height of an <code>&lt;input&gt;</code> element (only for type="image")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            list
+                        </td>
+                        <td>
+                            datalist_id
+                        </td>
+                        <td>
+                            Refers to a <code>&lt;datalist&gt;</code> element that contains pre-defined options for an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>
+                            max
+                        </td>
+                        <td>
+                            number
+                            date
+                        </td>
+                        <td>
+                            Specifies the maximum value for an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            maxlength
+                        </td>
+                        <td>
+                            number
+                        </td>
+                        <td>
+                            Specifies the maximum number of characters allowed in an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr rowspan="">
+                        <td>
+                            min
+                        </td>
+                        <td>
+                            number
+                            date
+                        </td>
+                        <td>
+                            Specifies a minimum value for an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            minlength
+                        </td>
+                        <td>
+                            number
+                        </td>
+                        <td>
+                            Specifies the minimum number of characters required in an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            multiple   
+                        </td>
+                        <td>
+                            multiple
+                        </td>
+                        <td>
+                            Specifies that a user can enter more than one value in an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            name
+                        </td>
+                        <td>
+                            text
+                        </td>
+                        <td>
+                            Specifies the name of the <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            pattern
+                        </td>
+                        <td>
+                            regexp  
+                        </td>
+                        <td>
+                            Specifies a regular expression that an <code>&lt;input&gt;</code> element's value is checked against
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            placeholder
+                        </td>
+                        <td>
+                            text
+                        </td>
+                        <td>
+                            Specifies a short hint that describes the expected value of an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            readonly   
+                        </td>
+                        <td>
+                            readonly
+                        </td>
+                        <td>
+                            Specifies that an input field is read-only
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            required
+                        </td>
+                        <td>
+                            required
+                        </td>
+                        <td>
+                            Specifies that an input field must be filled out before submitting the form
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            size   
+                        </td>
+                        <td>
+                            number
+                        </td>
+                        <td>
+                            Specifies the width, in characters, of an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            src
+                        </td>
+                        <td>
+                            URL
+                        </td>
+                        <td>
+                            Specifies the URL of the image to use as a submit button (only for type="image")
+                        </td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>
+                            step
+                        </td>
+                        <td>
+                            number
+                            any
+                        </td>
+                        <td>
+                            Specifies the interval between legal numbers in an input field
+                        </td>
+                    </tr>
+                    <tr rowspan="22">
+                        <td>
+                            type
+                        </td>
+                        <td>
+                            button<br>
+                            checkbox<br>
+                            color<br>
+                            date<br>
+                            datetime-local<br>
+                            email<br>
+                            file<br>
+                            hidden<br>
+                            image<br>
+                            month<br>
+                            number<br>
+                            password<br>
+                            radio<br>
+                            range<br>
+                            reset<br>
+                            search<br>
+                            submit<br>
+                            tel<br>
+                            text<br>
+                            time<br>
+                            url<br>
+                            week
+                        </td>
+                        <td>
+                            Specifies the type <code>&lt;input&gt;</code> element to display
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            value
+                        </td>
+                        <td>
+                            text
+                        </td>
+                        <td>
+                            Specifies the value of an <code>&lt;input&gt;</code> element
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            width
+                        </td>
+                        <td>
+                            pixels
+                        </td>
+                        <td>
+                            Specifies the width of an <code>&lt;input&gt;</code> element (only for type="image")
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <hr/>
+        <!-- Tips Section -->
+        <article id="tips">
+            <h2>Tips</h2>
+            <p> Always use the <code>&lt;label&gt;</code> tag to define labels for <code>&lt;input type="text"&gt;</code>, <code>&lt;input type="checkbox"&gt;</code>, <code>&lt;input type="radio"&gt;</code>, <code>&lt;input type="file"&gt;</code>, and <code>&lt;input type="pasword"&gt;</code>.</p>
+            <p>The <code>&lt;input&gt;</code> tag also supports the <a href="https://www.w3schools.com/tags/ref_standardattributes.asp">Global Attributes in HTML</a>.</p>
+            <p>The <code>&lt;input&gt;</code> tag also supports the <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">Event Attributes in HTML</a>.</p>
+        </article>
+    </section>
+</main>
+<footer id="contact">
+    <a id="to-top" href="#top">To the top of the page</a> <br>
+    <small>Created by: <i><b><u>Alex Amariei</u></b></i><br>
+        Email adress: alexamariei90@gamil.com
+    </small>
+</footer>
+
+</body>
+</html>
