@@ -14,3 +14,5 @@ The order in which i did the projects:
 4. InputTypes CheatSheet - MY FIRST PROJECT - NO step by step instructions from Codecademy
 
 5. temparatureConversion.js, dogYearsConversion.js, eightBall.js, anualRace.js are small projects(snipets of code) from Codecademy.
+
+6. rockPaperScissors.js, sleepDebtCalculator.js - Tasks from Codecademy after ending the "Functions" chapter.
