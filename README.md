@@ -16,3 +16,5 @@ The order in which i did the projects:
 5. temparatureConversion.js, dogYearsConversion.js, eightBall.js, anualRace.js are small projects(snipets of code) from Codecademy.
 
 6. rockPaperScissors.js, sleepDebtCalculator.js - Tasks from Codecademy after ending the "Functions" chapter.
+
+7. scooping.js is a challenge from CodeCademy in which i had to correct a snipet of codeto make me understand the global and local scoping.
