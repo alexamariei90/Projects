@@ -4,7 +4,7 @@ const finalGrade = (x, y, z) => {
    return  'You have entered an invalid grade.';
   }
   let average = (x + y + z )/ 3;
-/*if (average >= 0 && average <= 59 ) {
+if (average >= 0 && average <= 59 ) {
     return 'F';
   } else if (average >= 60 && average <= 69) {
     return 'D';
@@ -15,8 +15,8 @@ const finalGrade = (x, y, z) => {
   } else if (average >= 90 && average <= 100) {
     return 'A';
   } 
-  };*/
-  switch (true) {
+  };
+  /*switch (true) {
     case (average >= 0 && average <= 59):
     return 'F';
     break;
@@ -32,6 +32,6 @@ const finalGrade = (x, y, z) => {
     case (average >= 90 && average <= 100):
     return 'A';
     break;
-  }
-};
+  } 
+}; */
   console.log(finalGrade(99, 92, 95))
