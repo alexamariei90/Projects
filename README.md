@@ -18,3 +18,7 @@ The order in which i did the projects:
 6. rockPaperScissors.js, sleepDebtCalculator.js - Tasks from Codecademy after ending the "Functions" chapter.
 
 7. scooping.js is a challenge from CodeCademy in which i had to correct a snipet of codeto make me understand the global and local scoping.
+
+8. finalGrade.js, rollTheDice.js, weightOnPlanets.js, howOld.js, percentSharedDNA.js, tipCalculator.js  - quizz challenges from CodeCademy worth mentioning
+
+9. whaleTalk.js - small project to practice loops
